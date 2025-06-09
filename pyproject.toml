@@ -9,6 +9,7 @@ classifiers = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "colorama>=0.4.6",
     "langchain-core>=0.3.64",
     "langchain-ollama>=0.3.3",
     "langgraph>=0.4.8",
