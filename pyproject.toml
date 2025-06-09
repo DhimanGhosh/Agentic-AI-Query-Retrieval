@@ -1,7 +1,12 @@
 [project]
-name = "non-elaborative-query-answer"
+name = "Agentic-AI-Query-Retrieval"
 version = "0.1.0"
-description = "Add your description here"
+description = "Answering a elaborate / non-elaborate statement using an agentic system powered by LangGraph."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 requires-python = ">=3.12"
 dependencies = [
     "langchain-core>=0.3.64",
