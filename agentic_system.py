@@ -47,7 +47,6 @@ def rephraser_agent(state):
         ("human", "{statement}")
     ])
     chain = prompt | llm
-
     print("\nRephraser Agent: Rephrased statement:\n", end="", flush=True)
 
     # Streaming response
@@ -63,7 +62,6 @@ def retriever_agent(state):
         ("human", "{rephrased_statement}")
     ])
     chain = prompt | llm
-
     print("\n\nRetriever Agent: Retrieved answer:\n", end="", flush=True)
 
     # Streaming response
@@ -79,7 +77,6 @@ def validator_agent(state):
         ("human", "{retrieved_answer}")
     ])
     chain = prompt | llm
-
     print("\n\nSummarizing:\n", end="", flush=True)
 
     # Streaming response
