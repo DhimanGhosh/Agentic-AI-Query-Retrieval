@@ -1,4 +1,4 @@
-from graph_builder import graph
+from agent.graph_builder import graph
 from utils import (
     print_interrupt, print_error,
     Fore, Style
