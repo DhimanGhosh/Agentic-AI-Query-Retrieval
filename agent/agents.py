@@ -7,6 +7,7 @@ from agent.prompts import (
 from configparser import ConfigParser
 from utils import stream_response, print_response
 
+
 # Load config file
 config = ConfigParser()
 config.read('config.ini')

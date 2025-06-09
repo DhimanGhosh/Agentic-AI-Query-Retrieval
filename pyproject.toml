@@ -13,4 +13,6 @@ dependencies = [
     "langchain-core>=0.3.64",
     "langchain-ollama>=0.3.3",
     "langgraph>=0.4.8",
+    "matplotlib>=3.10.3",
+    "networkx>=3.5",
 ]
