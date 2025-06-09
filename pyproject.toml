@@ -1,0 +1,10 @@
+[project]
+name = "non-elaborative-query-answer"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=0.3.64",
+    "langchain-ollama>=0.3.3",
+    "langgraph>=0.4.8",
+]
