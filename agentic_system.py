@@ -1,8 +1,5 @@
 from agent.graph_builder import graph
-from utils import (
-    print_interrupt, print_error,
-    Fore, Style, show_graph
-)
+from utils import print_interrupt, print_error, take_input, show_graph
 
 
 # Execution function
@@ -14,9 +11,9 @@ def run_agentic_system(statement: str):
 # Run the agentic system
 if __name__ == '__main__':
     try:
-        input_statement = input(Style.BRIGHT + Fore.BLUE + "Enter a statement: ")
+        input_statement = take_input("Enter a statement")
         run_agentic_system(input_statement)
-        viz_graph = input(Style.BRIGHT + Fore.BLUE + "\n\nVisualize the graph? (y/n): ")
+        viz_graph = take_input("\n\nVisualize the graph? (y/n)")
         if viz_graph.lower() == "y":
             show_graph(graph)
     except KeyboardInterrupt:

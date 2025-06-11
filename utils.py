@@ -24,6 +24,9 @@ def print_interrupt(text: str):
 def print_error(text: str):
     print(Style.BRIGHT + Fore.RED + text)
 
+def take_input(text: str):
+    return input(Style.BRIGHT + Fore.BLUE + f"{text}: ")
+
 # Visualize the graph
 def show_graph(graph):
     # Extract the LangGraph DiGraph
